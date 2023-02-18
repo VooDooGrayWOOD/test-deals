@@ -1,5 +1,8 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { useDealsStore } from "./stores/deals";
+import pinia from "./stores/deals";
+import { createApp } from "vue";
+import App from "./App.vue";
 
-createApp(App).mount('#app')
+const app = createApp(App).use(pinia);
+app.config.globalProperties.mainStore = useDealsStore();
+app.mount("#app");

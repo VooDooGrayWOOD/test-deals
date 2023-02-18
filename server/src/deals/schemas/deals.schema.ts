@@ -12,4 +12,4 @@ export class Deals {
   id: number;
 }
 
-export const DelsSchema = SchemaFactory.createForClass(Deals);
+export const DealsSchema = SchemaFactory.createForClass(Deals);
